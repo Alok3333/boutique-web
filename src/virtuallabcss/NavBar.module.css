@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* underline text animation css */
+.unText {
+    display: inline-block;
+    position: relative;
+}
+
+.unText:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: #FFE2E2;
+    transition: 300ms;
+}
+
+.unText:hover:after {
+    width: 100%;
+}
+
+.unText:not(:hover):after {
+    right: 0;
+    left: auto;
+}
+
+.footerlogo {
+    padding: 16px;
+}
+
+.atag {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.signUpText {
+    text-decoration: none;
+}
+
+.atag:hover {
+    transition: all .3s ease;
+    color: #ff0000;
+}
