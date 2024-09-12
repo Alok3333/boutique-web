@@ -1390,7 +1390,7 @@ function CampusWebsite(props) {
                 item
                 xs={12}
                 sm={12}
-                md={6}
+                md={3}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -1424,14 +1424,13 @@ function CampusWebsite(props) {
             {/* Grid for footer info */}
             <Grid
               container
-              spacing={0}
               sx={{ backgroundColor: "#0c0c0c", color: "#cdcdcd" }}
             >
               <Grid
                 item
                 xs={12}
                 sm={12}
-                md={6}
+                md={3}
                 xl={3}
                 sx={{
                   p: 2,
@@ -1465,7 +1464,7 @@ function CampusWebsite(props) {
                 item
                 xs={12}
                 sm={12}
-                md={6}
+                md={3}
                 xl={3}
                 sx={{
                   p: 2,
@@ -1487,7 +1486,7 @@ function CampusWebsite(props) {
                 item
                 xs={12}
                 sm={12}
-                md={6}
+                md={3}
                 xl={3}
                 sx={{
                   p: 2,

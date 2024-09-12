@@ -330,15 +330,34 @@ function NavBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography sx={{ my: 2, px: 2 }}>
-        <Typography variant="h5" sx={{ fontWeight: "700", color: "brown" }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: "800",
+            color: "#FFC7C7",
+          }}
+        >
           TRISHIKA
         </Typography>
-        <Typography variant="h7">ELEVATE YOUR STYLE</Typography>
+        <Typography
+          variant="h7"
+          sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "300" }}
+        >
+          ELEVATE YOUR STYLE
+        </Typography>
       </Typography>
       <Divider />
       <List>
         <ListItem disablePadding component={RouterLink} to="/Login">
-          <ListItemButton sx={{ textAlign: "center" }}>
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
             <ListItemText primary="Login" />
           </ListItemButton>
         </ListItem>
@@ -359,7 +378,7 @@ function NavBar(props) {
           color: "#000",
         }}
       >
-        <Toolbar sx={{ minHeight: "100px !important" }}>
+        <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -376,10 +395,10 @@ function NavBar(props) {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100px",
+              //   height: "100px",
             }}
           >
-            <Grid item xs={12} sm={12} md={6} xl={2}>
+            <Grid item md={6} xl={2}>
               {/* Logo */}
               <Typography
                 variant="h6"
@@ -580,17 +599,12 @@ function NavBar(props) {
           <Container maxWidth="xl" sx={{ backgroundColor: "none", mt: 2 }}>
             {/* Grid for footer info */}
             <Grid container>
-                <Grid item
-                xs={12}
-                sm={12}
-                md={6}
-                xl={2}></Grid>
               <Grid
                 item
                 xs={12}
-                sm={12}
-                md={6}
-                xl={2}
+                sm={6}
+                md={3}
+                xl={3}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -644,9 +658,9 @@ function NavBar(props) {
               <Grid
                 item
                 xs={12}
-                sm={12}
-                md={6}
-                xl={2}
+                sm={6}
+                md={3}
+                xl={3}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -690,9 +704,9 @@ function NavBar(props) {
               <Grid
                 item
                 xs={12}
-                sm={12}
-                md={6}
-                xl={2}
+                sm={6}
+                md={3}
+                xl={3}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -722,9 +736,9 @@ function NavBar(props) {
               <Grid
                 item
                 xs={12}
-                sm={12}
-                md={6}
-                xl={2}
+                sm={6}
+                md={3}
+                xl={3}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -754,14 +768,6 @@ function NavBar(props) {
                     Facebook
                   </Link>
                 </Typography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                xl={2}
-              >
               </Grid>
             </Grid>
           </Container>
