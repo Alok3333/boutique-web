@@ -213,10 +213,11 @@ export const ContactPage = () => {
             variant="h3"
             sx={{
               my: 4,
-              fontWeight: 700,
               color: "#444",
               textShadow:
                 "1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
             }}
           >
             Contact Us
@@ -560,95 +561,36 @@ function NavBar(props) {
             marginTop: "64px",
           }}
         >
-          <Container>
-            <Box
-              component="main"
-              sx={{ p: 2, backgroundColor: "#fff", color: "#0c0c0c" }}
-            >
-              <Box>
-                <img
-                  src="https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/9-2024-10-5245-about-img.jpg"
-                  alt="about_img"
-                  className={styles.aboutImage}
-                />
-              </Box>
-            </Box>
-          </Container>
-
+          <Typography
+            component="div"
+            sx={{
+              marginTop: "120px",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+            }}
+          >
+            Put Image here
+          </Typography>
           {/* Contact page */}
           <ContactPage />
         </Box>
 
         {/* Footer Section*/}
-        <Box sx={{ backgroundColor: "#0c0c0c", color: "#fff", p: 2 }}>
+        <Box sx={{ backgroundColor: "#F6F6F6", color: "#000", p: 2 }}>
           <Container maxWidth="xl" sx={{ backgroundColor: "none", mt: 2 }}>
-            {/* Grid for footer logo and social links */}
-            <Grid
-              container
-              spacing={0}
-              sx={{ backgroundColor: "none", color: "#cdcdcd" }}
-            >
-              <Grid item xs={12} sm={12} md={6} sx={{ p: 2 }}>
-                <img
-                  src="https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/9-2024-11-2048-FullLogo_Transparent_NoBuffer.png"
-                  alt="footer_ct_logo"
-                  width="150"
-                  height="60"
-                  style={{
-                    objectFit: "cover",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                />
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                sx={{
-                  p: 2,
-                  display: "flex",
-                  justifyContent: "end",
-                  alignItems: "center",
-                  gap: "14px",
-                }}
-              >
-                <Typography sx={{ color: "#1877F2" }}>
-                  <FacebookIcon />
-                </Typography>
-
-                <Typography sx={{ color: "#657786" }}>
-                  <XIcon />
-                </Typography>
-
-                <Typography sx={{ color: "#0072b1" }}>
-                  <LinkedInIcon />
-                </Typography>
-
-                <Typography sx={{ color: "#d62976" }}>
-                  <InstagramIcon />
-                </Typography>
-
-                <Typography sx={{ color: "#FF0000" }}>
-                  <YouTubeIcon />
-                </Typography>
-              </Grid>
-            </Grid>
-
             {/* Grid for footer info */}
-            <Grid
-              container
-              spacing={0}
-              sx={{ backgroundColor: "#0c0c0c", color: "#cdcdcd" }}
-            >
+            <Grid container>
+                <Grid item
+                xs={12}
+                sm={12}
+                md={6}
+                xl={2}></Grid>
               <Grid
                 item
                 xs={12}
                 sm={12}
                 md={6}
-                xl={3}
+                xl={2}
                 sx={{
                   p: 2,
                   display: "flex",
@@ -657,23 +599,159 @@ function NavBar(props) {
                   justifyContent: "start",
                   alignItems: "start",
                   textTransform: "uppercase",
-                  fontWeight: 700,
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 300,
+                  fontSize: "12px",
                 }}
               >
-                Useful Link
-                <Typography sx={{ mt: 1 }}>
+                What's new
+                <Typography sx={{ mt: 2, lineHeight: "2" }}>
                   <Link to="/" className={styles.atag}>
-                    Home
+                    New Sari 2024
                   </Link>
                 </Typography>
-                <Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Soulful Benaras 2024
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/login" className={styles.atag}>
+                    Deccan Heritage 2024
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Shonar Bangla 2024
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/login" className={styles.atag}>
+                    Rangilo Rajasthan 2024
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Kashmir ki Kali 2024
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/login" className={styles.atag}>
+                    Orissa odyssey 2024
+                  </Link>
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                xl={2}
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "start",
+                  justifyContent: "start",
+                  alignItems: "start",
+                  textTransform: "uppercase",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 300,
+                  fontSize: "12px",
+                }}
+              >
+                World of trishika
+                <Typography sx={{ mt: 2, lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    History
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Collaborations
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/login" className={styles.atag}>
+                    The trishika art foundation
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Social Initiatives
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/login" className={styles.atag}>
+                    Art Of Retail
+                  </Link>
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                xl={2}
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "start",
+                  justifyContent: "start",
+                  alignItems: "start",
+                  textTransform: "uppercase",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 300,
+                  fontSize: "12px",
+                }}
+              >
+                Customer care
+                <Typography sx={{ mt: 2, lineHeight: "2" }}>
                   <Link to="/" className={styles.atag}>
                     Contact
                   </Link>
                 </Typography>
-                <Typography>
-                  <Link to="/login" className={styles.atag}>
-                    Login
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Stores
+                  </Link>
+                </Typography>
+              </Grid>
+
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={6}
+                xl={2}
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "start",
+                  justifyContent: "start",
+                  alignItems: "start",
+                  textTransform: "uppercase",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: 300,
+                  fontSize: "12px",
+                }}
+              >
+                Social
+                <Typography sx={{ mt: 2, lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    YouTube
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Instagram
+                  </Link>
+                </Typography>
+                <Typography sx={{ lineHeight: "2" }}>
+                  <Link to="/" className={styles.atag}>
+                    Facebook
                   </Link>
                 </Typography>
               </Grid>
@@ -682,93 +760,10 @@ function NavBar(props) {
                 xs={12}
                 sm={12}
                 md={6}
-                xl={3}
-                sx={{
-                  p: 2,
-                  display: "block",
-                  textTransform: "uppercase",
-                  fontWeight: 700,
-                }}
+                xl={2}
               >
-                Offices
-                <Typography sx={{ mt: 1, textTransform: "none" }}>
-                  www.Campus
-                  <Typography component="span" sx={{ color: "red" }}>
-                    Technology
-                  </Typography>
-                  .com
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                xl={3}
-                sx={{
-                  p: 2,
-                  display: "grid",
-                  textTransform: "uppercase",
-                  fontWeight: 700,
-                }}
-              >
-                Information
-                <Typography sx={{ mt: 0, textTransform: "none" }}>
-                  Readable content of a page when looking at its layoutreadable
-                  content of a page when looking at its layout.
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                xl={3}
-                sx={{
-                  p: 2,
-                  display: "block",
-                  textTransform: "uppercase",
-                  fontWeight: 700,
-                }}
-              >
-                Newsletter
-                <Typography
-                  component="div"
-                  sx={{ mt: 1, textTransform: "none" }}
-                >
-                  <TextField
-                    size="small"
-                    fullWidth
-                    // label="Email"
-                    placeholder="Email"
-                    id="fullWidth"
-                    sx={{ backgroundColor: "#fff", borderRadius: "4px" }}
-                    value={subscribeVal}
-                    onChange={(e) => setSubscribeVal(e.target.value)}
-                  />
-                  <Button
-                    variant="contained"
-                    sx={{ my: 1 }}
-                    onClick={handleSubscribe}
-                  >
-                    Subscribe
-                  </Button>
-                </Typography>
               </Grid>
             </Grid>
-
-            {/* CopyRight text */}
-            {/* <Typography
-              component="div"
-              sx={{
-                color: "#cdcdcd",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              &copy; www.campustechnology.com
-            </Typography> */}
           </Container>
         </Box>
       </Box>

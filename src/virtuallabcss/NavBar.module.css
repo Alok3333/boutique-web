@@ -34,7 +34,10 @@
 .atag {
     text-decoration: none;
     text-transform: capitalize;
-    color: #fff;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .signUpText {
@@ -43,5 +46,5 @@
 
 .atag:hover {
     transition: all .3s ease;
-    color: #ff0000;
+    color: #8785A2;
 }
