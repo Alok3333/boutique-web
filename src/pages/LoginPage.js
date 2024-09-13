@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import loginCss from "../css/Login.module.css";
+import loginCss from "../css/LoginPage.module.css";
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <Box
       sx={{
@@ -157,4 +157,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

@@ -1,9 +1,15 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import footerCss from "../css/Footer.module.css";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  // Handle for contact button
+  const handleContact = async () => {
+    navigate("/contact");
+  };
   return (
     <div>
       {/* Footer Section*/}
@@ -134,7 +140,11 @@ function Footer() {
             >
               Customer care
               <Typography sx={{ mt: 2, lineHeight: "2" }}>
-                <Link to="/" className={footerCss.atag}>
+                <Link
+                  to="/contact"
+                  onClick={handleContact}
+                  className={footerCss.atag}
+                >
                   Contact
                 </Link>
               </Typography>
