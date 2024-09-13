@@ -1,35 +1,52 @@
-import { Box, Skeleton, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Grid, Skeleton, Typography } from "@mui/material";
+import React from "react";
+import Cart from "./Cart";
+
+const saareItems = [1, 2, 3, 4, 5, 6, 7, 8];
 
 function BoutiqueMain() {
+  // const [items, setItems] = useState([]);
+
   return (
     <Box sx={{ width: "100%" }}>
-        <Box
+      <Box
+        sx={{
+          position: "relative",
+          margin: "auto",
+          marginTop: "64px",
+        }}
+      >
+        <Typography
+          component="div"
           sx={{
-            position: "relative",
-            // maxWidth: "1500px",
-            margin: "auto",
-            marginTop: "64px",
+            display: "block",
+            marginTop: "120px",
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 300,
           }}
         >
-          <Typography
-            component="div"
-            sx={{
-              display: "flex",
-              marginTop: "120px",
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 300,
-            }}
-          >
-            <Skeleton variant="rectangular" width={1500} height={600} />
-            {<br />}
-            <Skeleton variant="rounded" width={1500} height={300} />
-            Put Image here
-          </Typography>
-        </Box>
+          <Skeleton
+            variant="rectangular"
+            sx={{ width: "100%", height: "300px" }}
+          />
+          Put Image here
+          {/* Cart component render*/}
+          <Grid container sx={{ paddingLeft: "20px", paddingRight: "20px" }}>
+            {saareItems.map((item) => (
+              <Grid
+                xs={12}
+                sm={6}
+                md={3}
+                sx={{ display: "grid", placeItems: "center" }}
+              >
+                <Cart />
+              </Grid>
+            ))}
+          </Grid>
+        </Typography>
       </Box>
-
-  )
+    </Box>
+  );
 }
 
-export default BoutiqueMain
+export default BoutiqueMain;
