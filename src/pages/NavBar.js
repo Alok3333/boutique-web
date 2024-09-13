@@ -23,7 +23,6 @@ import { Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import navStyles from "../css/NavBar.module.css";
 
-
 const drawerWidth = 340;
 
 function NavBar(props) {
@@ -34,6 +33,36 @@ function NavBar(props) {
   // Handle click for Buy button
   const handleClickBuyButton = () => {
     alert("Thank you for buying product");
+  };
+
+  // Handle for logo click
+  const handleImageClickLogo = async () => {
+    navigate("/");
+  };
+
+  // Handle click for menu item
+  const handleClickItem1 = async () => {
+    navigate("/soulfulbenaras");
+  };
+
+  const handleClickItem2 = async () => {
+    navigate("/deccanheritage");
+  };
+
+  const handleClickItem3 = async () => {
+    navigate("/shonarbangla");
+  };
+
+  const handleClickItem4 = async () => {
+    navigate("/rangilorajasthan");
+  };
+
+  const handleClickItem5 = async () => {
+    navigate("/kashmirkali");
+  };
+
+  const handleClickItem6 = async () => {
+    navigate("/orissaodyssey");
   };
 
   const handleDrawerToggle = () => {
@@ -125,6 +154,7 @@ function NavBar(props) {
                   justifyContent: "start",
                   alignItems: "center",
                 }}
+                onClick={handleImageClickLogo}
               >
                 <img
                   src="https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/9-2024-12-5832-trishika_logo-Photo.png"
@@ -175,6 +205,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem1}
                 >
                   Soulful Benaras
                 </Button>
@@ -186,6 +217,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem2}
                 >
                   Deccan Heritage
                 </Button>
@@ -197,6 +229,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem3}
                 >
                   Shonar Bangla
                 </Button>
@@ -208,6 +241,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem4}
                 >
                   Rangilo Rajasthan
                 </Button>
@@ -219,6 +253,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem5}
                 >
                   Kashmir ki Kali
                 </Button>
@@ -230,6 +265,7 @@ function NavBar(props) {
                     mx: 1,
                   }}
                   className={navStyles.unText}
+                  onClick={handleClickItem6}
                 >
                   Orissa odyssey
                 </Button>

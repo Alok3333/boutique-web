@@ -13,7 +13,7 @@ export const ContactPage = () => {
       console.log(firstName, lastName, email, phone);
     }
     return (
-      <Container maxWidth="xl" sx={{ my: 4, p: 4 }}>
+      <Container maxWidth="xl" sx={{ my: 4, p: 4, marginTop: "16%", height: "60vh" }}>
         <Grid container spacing={0}>
           <Grid xs={12} sm={12} md={6} xl={6} sx={{ p: 4 }}>
             <Typography
