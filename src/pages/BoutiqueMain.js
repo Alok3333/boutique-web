@@ -29,7 +29,17 @@ function BoutiqueMain() {
             variant="rectangular"
             sx={{ width: "100%", height: "300px" }}
           />
-          Put Image here
+          <Typography
+            sx={{
+              mt: 4,
+              paddingLeft: "48px",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 100,
+              fontSize: "3rem",
+            }}
+          >
+            New Collections
+          </Typography>
           {/* Cart component render*/}
           <Grid container sx={{ paddingLeft: "20px", paddingRight: "20px" }}>
             {saareItems.map((item) => (

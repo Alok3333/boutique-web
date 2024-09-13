@@ -48,7 +48,7 @@ function Footer() {
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/login" className={footerCss.atag}>
+                <Link to="/" className={footerCss.atag}>
                   Deccan Heritage 2024
                 </Link>
               </Typography>
@@ -58,7 +58,7 @@ function Footer() {
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/login" className={footerCss.atag}>
+                <Link to="/" className={footerCss.atag}>
                   Rangilo Rajasthan 2024
                 </Link>
               </Typography>
@@ -68,7 +68,7 @@ function Footer() {
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/login" className={footerCss.atag}>
+                <Link to="/" className={footerCss.atag}>
                   Orissa odyssey 2024
                 </Link>
               </Typography>
@@ -104,7 +104,7 @@ function Footer() {
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/login" className={footerCss.atag}>
+                <Link to="/" className={footerCss.atag}>
                   The trishika art foundation
                 </Link>
               </Typography>
@@ -114,7 +114,7 @@ function Footer() {
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/login" className={footerCss.atag}>
+                <Link to="/" className={footerCss.atag}>
                   Art Of Retail
                 </Link>
               </Typography>
@@ -176,17 +176,17 @@ function Footer() {
             >
               Social
               <Typography sx={{ mt: 2, lineHeight: "2" }}>
-                <Link to="/" className={footerCss.atag}>
+                <Link to="https://www.youtube.com/@trishika-style" className={footerCss.atag}>
                   YouTube
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/" className={footerCss.atag}>
+                <Link to="https://www.instagram.com/style_with_trishika?utm_source=qr&igsh=MXB1NTZzaDhuaGdsYg%3D%3D" className={footerCss.atag}>
                   Instagram
                 </Link>
               </Typography>
               <Typography sx={{ lineHeight: "2" }}>
-                <Link to="/" className={footerCss.atag}>
+                <Link to="https://www.facebook.com/profile.php?id=61565641401554&mibextid=qi2Omg&rdid=M4lICVmjbchgxoKP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FExS7w5YUPuDei9S8%2F%3Fmibextid%3Dqi2Omg" className={footerCss.atag}>
                   Facebook
                 </Link>
               </Typography>

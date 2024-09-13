@@ -42,7 +42,7 @@ function NavBar(props) {
 
   // Handle click for menu item
   const handleClickItem1 = async () => {
-    navigate("/soulfulbenaras");
+    navigate("/soulfulbanaras");
   };
 
   const handleClickItem2 = async () => {
@@ -95,7 +95,103 @@ function NavBar(props) {
       </Typography>
       <Divider />
       <List>
-        <ListItem disablePadding component={RouterLink} to="/Login">
+        <ListItem disablePadding component={RouterLink} to="/">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="New Collections" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/soulfulbanaras">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Soulful Banaras" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/deccanheritage">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Deccan Heritage" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/shonarbangla">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Shonar Bangla" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/rangilorajasthan">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Rangilo Rajasthan" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/kashmirkali">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Kashmir Ki Kali" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/orissaodyssey">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Orissa Odyssey" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/contact">
+          <ListItemButton
+            sx={{
+              textAlign: "center",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: 300,
+              color: "#000",
+            }}
+          >
+            <ListItemText primary="Contact" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding component={RouterLink} to="/login">
           <ListItemButton
             sx={{
               textAlign: "center",
@@ -207,7 +303,7 @@ function NavBar(props) {
                   className={navStyles.unText}
                   onClick={handleClickItem1}
                 >
-                  Soulful Benaras
+                  Soulful Banaras
                 </Button>
                 <Button
                   sx={{

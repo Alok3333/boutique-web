@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<BoutiqueMain />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/soulfulbenaras" element={<SoulfulBenaras />} />
+        <Route path="/soulfulbanaras" element={<SoulfulBenaras />} />
         <Route path="/deccanheritage" element={<DeccanHeritage />} />
         <Route path="/shonarbangla" element={<ShonarBangla />} />
         <Route path="/rangilorajasthan" element={<RangiloRajasthan />} />

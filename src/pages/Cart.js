@@ -7,7 +7,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-// import cartCss from "../css/Cart.module.css";
 import img1 from "../assets/Saree (5).jpg";
 
 function Cart() {
