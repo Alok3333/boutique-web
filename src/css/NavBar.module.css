@@ -26,25 +26,3 @@
     right: 0;
     left: auto;
 }
-
-.footerlogo {
-    padding: 16px;
-}
-
-.atag {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.signUpText {
-    text-decoration: none;
-}
-
-.atag:hover {
-    transition: all .3s ease;
-    color: #8785A2;
-}

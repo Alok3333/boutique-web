@@ -285,7 +285,7 @@ export const ContactPage = () => {
 
 const drawerWidth = 340;
 
-function NavBar(props) {
+function BoutiqueMain(props) {
   const navigate = useNavigate();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -762,8 +762,8 @@ function NavBar(props) {
   );
 }
 
-NavBar.propTypes = {
+BoutiqueMain.propTypes = {
   window: PropTypes.func,
 };
 
-export default NavBar;
+export default BoutiqueMain;

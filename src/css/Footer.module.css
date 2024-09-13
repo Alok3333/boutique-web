@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.atag {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.atag:hover {
+    transition: all .3s ease;
+    color: #8785A2;
+}
