@@ -8,10 +8,11 @@ import {
 } from "@mui/material";
 import React from "react";
 import img1 from "../assets/Saree (5).jpg";
+import cartCss from "../css/Cart.module.css";
 
 function Cart() {
   return (
-    <Card sx={{ maxWidth: 400, mx: 2, my: 5 }}>
+    <Card sx={{ maxWidth: 400, mx: 2, my: 5 }} className={cartCss.cartWrapper}>
       <CardMedia
         component="img"
         alt="green iguana"

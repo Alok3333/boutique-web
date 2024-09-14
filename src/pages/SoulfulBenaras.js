@@ -1,6 +1,7 @@
 import { Box, Grid, Skeleton, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Cart from "./Cart";
+import styles from "../css/UnderlineText.module.css";
 
 function SoulfulBenaras() {
   const [saareItems, setISaareItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -52,12 +53,19 @@ function SoulfulBenaras() {
             sx={{
               mt: 4,
               paddingLeft: "48px",
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 100,
-              fontSize: "3rem",
             }}
           >
-            Soulful Banaras
+            <Typography
+              sx={{
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: 100,
+                fontSize: "3rem",
+                width: "400px"
+              }}
+              className={styles.unText}
+            >
+              Soulful Banaras
+            </Typography>
           </Typography>
           {/* Cart component render*/}
           <Grid container sx={{ paddingLeft: "20px", paddingRight: "20px" }}>
