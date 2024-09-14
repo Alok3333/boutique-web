@@ -191,18 +191,6 @@ function NavBar(props) {
             <ListItemText primary="Contact" />
           </ListItemButton>
         </ListItem>
-        {/* <ListItem disablePadding component={RouterLink} to="/login">
-          <ListItemButton
-            sx={{
-              textAlign: "center",
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 300,
-              color: "#000",
-            }}
-          >
-            <ListItemText primary="Login" />
-          </ListItemButton>
-        </ListItem> */}
       </List>
     </Box>
   );
@@ -239,7 +227,7 @@ function NavBar(props) {
               alignItems: "center",
             }}
           >
-            <Grid item xs={2} sm={2} md={1.8}>
+            <Grid item xs={1} sm={2} md={1.8}>
               {/* Logo */}
               <Typography
                 variant="h6"
@@ -283,7 +271,7 @@ function NavBar(props) {
             {/* menu title button */}
             <Grid
               item
-              xs={2}
+              xs={1}
               sm={4}
               md={8.2}
               sx={{
@@ -372,7 +360,7 @@ function NavBar(props) {
             {/* button for login and buy */}
             <Grid
               item
-              xs={8}
+              xs={10}
               sm={6}
               md={2}
               sx={{ display: "grid", placeItems: "end" }}
