@@ -24,7 +24,8 @@ function App() {
         <Route path="/rangilorajasthan" element={<RangiloRajasthan />} />
         <Route path="/kashmirkali" element={<KashmirkiKali />} />
         <Route path="/orissaodyssey" element={<OrissaOdyssey />} />
-        <Route path="/contact" element={<ContactPage />} /> 
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<h1>page not found</h1>} />
       </Routes>
       <Footer />
     </div>

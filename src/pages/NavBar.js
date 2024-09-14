@@ -191,7 +191,7 @@ function NavBar(props) {
             <ListItemText primary="Contact" />
           </ListItemButton>
         </ListItem>
-        <ListItem disablePadding component={RouterLink} to="/login">
+        {/* <ListItem disablePadding component={RouterLink} to="/login">
           <ListItemButton
             sx={{
               textAlign: "center",
@@ -202,7 +202,7 @@ function NavBar(props) {
           >
             <ListItemText primary="Login" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
       </List>
     </Box>
   );
@@ -226,7 +226,7 @@ function NavBar(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { xs: "block", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -239,14 +239,14 @@ function NavBar(props) {
               alignItems: "center",
             }}
           >
-            <Grid item sm={2} md={2}>
+            <Grid item xs={2} sm={2} md={1.8}>
               {/* Logo */}
               <Typography
                 variant="h6"
                 component="div"
                 sx={{
                   flexGrow: 1,
-                  display: { xs: "none", sm: "flex" },
+                  display: { xs: "none", sm: "none", md: "flex" }, //Hidden on mobile & tablet
                   justifyContent: "start",
                   alignItems: "center",
                 }}
@@ -283,8 +283,9 @@ function NavBar(props) {
             {/* menu title button */}
             <Grid
               item
-              sm={8}
-              md={8}
+              xs={2}
+              sm={4}
+              md={8.2}
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -292,7 +293,7 @@ function NavBar(props) {
                 gap: 2,
               }}
             >
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
                 <Button
                   sx={{
                     color: "#000",
@@ -371,11 +372,12 @@ function NavBar(props) {
             {/* button for login and buy */}
             <Grid
               item
-              sm={2}
+              xs={8}
+              sm={6}
               md={2}
-              sx={{ display: "flex", justifyContent: "end" }}
+              sx={{ display: "grid", placeItems: "end" }}
             >
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box sx={{ display: { xs: "block", sm: "block" } }}>
                 <Button
                   sx={{
                     color: "#000",
@@ -415,7 +417,7 @@ function NavBar(props) {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
