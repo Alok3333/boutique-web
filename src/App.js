@@ -11,11 +11,15 @@ import RangiloRajasthan from "./pages/RangiloRajasthan";
 import KashmirkiKali from "./pages/KashmirkiKali";
 import OrissaOdyssey from "./pages/OrissaOdyssey";
 import ProductDetails from "./pages/ProductDetails";
+import VideoPage from "./pages/Videopage31";
+import VideoPage1 from "./pages/VideoPage1";
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <VideoPage />
+      {/* <VideoPage1/> */}
+      {/* <NavBar />
       <Routes>
         <Route path="/" element={<BoutiqueMain />} />
         <Route path="/login" element={<LoginPage />} />
@@ -29,7 +33,7 @@ function App() {
         <Route path="/product" element={<ProductDetails productId="1"/>} />
         <Route path="*" element={<h1>page not found</h1>} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

@@ -68,6 +68,77 @@ function ShonarBangla() {
               />
             </Typography>
           </Typography>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12}>
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: "auto",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  src="https://images7.alphacoders.com/107/thumbbig-1079694.jpg"
+                  alt="new item1"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                    transition: "transform 0.5s ease",
+                  }}
+                />
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    background: "rgba(0, 0, 0, 0.5)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    opacity: 0,
+                    transition: "opacity 0.5s ease",
+                    '&:hover': {
+                      opacity: 1,
+                    },
+                  }}
+                >
+                  <Box
+                    sx={{
+                      textAlign: "center",
+                      color: "white",
+                      p: 3,
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1.5rem",
+                        fontWeight: 700,
+                        mb: 2,
+                      }}
+                    >
+                      Explore
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1rem",
+                        fontWeight: 400,
+                      }}
+                    >
+                      Discover the best of Shonar Bangla
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
           <Skeleton
             variant="rectangular"
             sx={{ width: "100%", height: "300px" }}

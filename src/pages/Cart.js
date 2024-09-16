@@ -10,7 +10,7 @@ import React from "react";
 import img1 from "../assets/Saree (5).jpg";
 import cartCss from "../css/Cart.module.css";
 
-function Cart() {
+function Cart({ image, price, title }) {
   return (
     <Card sx={{ maxWidth: 400, mx: 2, my: 5 }} className={cartCss.cartWrapper}>
       <CardMedia
@@ -22,9 +22,11 @@ function Cart() {
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           ₹2000
+          {/* {price} */}
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
           Women's Trendy Kanjivaram Soft Lichi Silk Saree With Blouse Piece
+          {/* {title} */}
         </Typography>
       </CardContent>
       <CardActions>
@@ -38,4 +40,3 @@ function Cart() {
 }
 
 export default Cart;
-
